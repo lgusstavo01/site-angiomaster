@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Angiomaster</title>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- JS -->
+    <script defer src="./script/index.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Raleway:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header id="header">
+      <nav class="container nav">
+        <a class="logo" href="#">
+          <img src="./files/img/logo.png" alt="" />
+        </a>
+        <div class="menu">
+          <ul class="grid nav-list">
+            <li><a class="title" href="#about">Sobre</a></li>
+            <li><a class="title" href="#services">Serviços</a></li>
+            <li><a class="title" href="#equipe">Equipe</a></li>
+            <li><a class="title" href="#testimonials">Depoimentos</a></li>
+            <li><a class="title" href="#contact">Contato</a></li>
+          </ul>
+        </div>
+
+        <button class="toggle icon-menu"></button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="carousel" id="carousel">
+        <div class="carouselContainer">
+          <div class="carouselImg">
+            <img src="./files/img/angiomaster_banner_1.jpg" alt="" />
+          </div>
+          <div class="carouselImg">
+            <img src="./files/img/angiomaster_banner_2.jpg" alt="" />
+          </div>
+          <div class="carouselImg">
+            <img src="./files/img/angiomaster_banner_3.jpg" alt="" />
+          </div>
+        </div>
+
+        <button
+          style="background: none"
+          class="carousel-btn prev-btn"
+          onclick="prevSlide()"
+        >
+          &#10094;
+        </button>
+        <button
+          style="background: none"
+          class="carousel-btn next-btn"
+          onclick="nextSlide()"
+        >
+          &#10095;
+        </button>
+      </section>
+
+      <section class="about" id="about">
+        <div class="about-container space">
+          <div class="about-img">
+            <img
+              src="./files/img/foto-fundo.jpeg"
+              alt="Foto da empresa"
+              class="img-about"
+            />
+          </div>
+          <div class="text">
+            <h2>Á Clínica</h2>
+            <p>
+              Angiomaster é uma empresa formada por cirurgiões vasculares e
+              angiologistas. Uma empresa nova, moderna e em constante
+              desenvolvimento.
+            </p>
+            <button class="read-more">SAIBA MAIS</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="services" id="services">
+        <h2 class="title-information">PRINCIPAIS SERVIÇOS</h2>
+        <section class="informacoes space">
+          <div class="cardGrid checkup-vascular">
+            <div class="imgBox">
+              <img
+                src="./files/icons/medical-stethoscope-doctor-svgrepo-com.svg"
+                alt="Checkup Vascular"
+              />
+            </div>
+            <div class="title">
+              <h4>CHECKUP VASCULAR</h4>
+              <p>
+                Angiomaster é uma empresa formada por cirurgiões vasculares e
+                angiologistas. Uma empresa nova, moderna e em constante
+                desenvolvimento.
+              </p>
+              <a href="#" class="read-more"> Saiba mais ! </a>
+            </div>
+          </div>
+
+          <div class="cardGrid tratamento-venosas">
+            <div class="imgBox">
+              <img
+                src="./files/icons/medical-medicine-health-2-svgrepo-com.svg"
+                alt="TRATAMENTO DE DOENÇAS VENOSAS"
+              />
+            </div>
+            <div class="title">
+              <h4>TRATAMENTO DE DOENÇAS VENOSAS</h4>
+              <p>
+                Atendimento humanizado, equipe especializada e atualizada,
+                oferecendo tratamentos convencionais e minimamente invasivos.
+              </p>
+              <a href="#" class="read-more"> Saiba mais ! </a>
+            </div>
+          </div>
+
+          <div class="cardGrid tratamento-ulceras">
+            <div class="imgBox">
+              <img
+                src="./files/icons/medical-kit-svgrepo-com.svg"
+                alt="Logo da Angiomaster"
+              />
+            </div>
+            <div class="title">
+              <h4>TRATAMENTO DE ÚLCERAS</h4>
+              <p>
+                Esclarecemos para você as dúvidas mais comuns sobre os serviços
+                prestados pela Angiomaster nesta lista com perguntas e
+                respostas.
+              </p>
+              <a href="#" class="read-more"> Saiba mais ! </a>
+            </div>
+          </div>
+        </section>
+
+        <section class="informacoes space">
+          <div class="cardGrid tratamento-diabetico">
+            <div class="imgBox">
+              <img
+                src="./files/icons/medical-drip-svgrepo-com.svg"
+                alt="Checkup Vascular"
+              />
+            </div>
+            <div class="title">
+              <h4>TRATAMENTO VASCULAR DO DIABÉTICO</h4>
+              <p>
+                Angiomaster é uma empresa formada por cirurgiões vasculares e
+                angiologistas. Uma empresa nova, moderna e em constante
+                desenvolvimento.
+              </p>
+              <a href="#" class="read-more"> Saiba mais ! </a>
+            </div>
+          </div>
+
+          <div class="cardGrid ecografia-vascular">
+            <div class="imgBox">
+              <img
+                src="./files/icons/medical-medicine-health-9-svgrepo-com.svg"
+                alt="Logo da Angiomaster"
+              />
+            </div>
+            <div class="title">
+              <h4>ECOGRAFIA VASCULAR</h4>
+              <p>
+                Atendimento humanizado, equipe especializada e atualizada,
+                oferecendo tratamentos convencionais e minimamente invasivos.
+              </p>
+              <a href="#" class="read-more"> Saiba mais ! </a>
+            </div>
+          </div>
+
+          <div class="cardGrid doencas-arteriais">
+            <div class="imgBox">
+              <img
+                class="diabetico"
+                src="./files/icons/medical-bloodbag-treatment-svgrepo-com.svg"
+                alt="Logo da Angiomaster"
+              />
+            </div>
+            <div class="title">
+              <h4>TRATAMENTO DE DOENÇAS ARTERIAIS</h4>
+              <p>
+                Esclarecemos para você as dúvidas mais comuns sobre os serviços
+                prestados pela Angiomaster nesta lista com perguntas e
+                respostas.
+              </p>
+              <a href="#" class="read-more"> Saiba mais ! </a>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <h2 class="title-equipe" style="padding-top: 5rem">NOSSA EQUIPE</h2>
+      <section class="equipe" id="equipe">
+        <div class="container-equipe">
+          <input type="radio" name="dot" id="one" />
+          <input type="radio" name="dot" id="two" />
+          <div class="main-card">
+            <div class="cards">
+              <div class="card doctor-andre">
+                <div class="content">
+                  <div class="juntando">
+                    <div class="img">
+                      <img src="./files/medicos/andre.png" alt="" />
+                    </div>
+                    <div class="details">
+                      <div class="name">André Pinheiro</div>
+                      <div class="job">Cirurgião Vascular</div>
+                    </div>
+                  </div>
+                  <div class="media-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="card doctor-italo">
+                <div class="content">
+                  <div class="juntando">
+                    <div class="img">
+                      <img src="./files/medicos/italo.png" alt="" />
+                    </div>
+                    <div class="details">
+                      <div class="name">Ítalo Andrade</div>
+                      <div class="job">Especialista em Ecografia Vascular</div>
+                    </div>
+                  </div>
+                  <div class="media-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="card doctor-luciana">
+                <div class="content">
+                  <div class="juntando">
+                    <div class="img">
+                      <img src="./files/medicos/luciana.png" alt="" />
+                    </div>
+                    <div class="details">
+                      <div class="name">Luciana Macêdo</div>
+                      <div class="job">Especialista em Cirurgia Vascular</div>
+                    </div>
+                  </div>
+                  <div class="media-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="card doctor-vinicius">
+                <div class="content">
+                  <div class="juntando">
+                    <div class="img">
+                      <img src="./files/medicos/vinicius.png" alt="" />
+                    </div>
+                    <div class="details">
+                      <div class="name">Vinícius Majdalani</div>
+                      <div class="job">Especialista em Cirurgia Vascular</div>
+                    </div>
+                  </div>
+                  <div class="media-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="card doctor-ricardo">
+                <div class="content">
+                  <div class="juntando">
+                    <div class="img">
+                      <img src="./files/medicos/ricardo.png" alt="" />
+                    </div>
+                    <div class="details">
+                      <div class="name">Ricardo Vieira</div>
+                      <div class="job">Cirurgião Vascular</div>
+                    </div>
+                  </div>
+                  <div class="media-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cards"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonials">
+        <header>
+          <h2 class="title-information" style="padding-top: 5rem">
+            DEPOIMENTOS
+          </h2>
+        </header>
+        <div class="testimonials swiper-container space">
+          <div class="swiper-wrapper">
+            <div class="testimonial swiper-slide">
+              <blockquote>
+                <p>
+                  <span>&ldquo; </span>
+                  Bom dia Dr. Vinicius, quero agradecer pelo carinho, atenção e
+                  profissionalismo que o senhor teve comigo. Hoje divulguei seu
+                  trabalho para todos os grupos que tenho, profissional como o
+                  senhor tem que ser divulgado, obrigada!!
+                </p>
+                <cite> T.M.S.N., LAURO DE FREITAS-BA, 20/09/16 </cite>
+              </blockquote>
+            </div>
+
+            <div class="testimonial swiper-slide">
+              <blockquote>
+                <p>
+                  <span>&ldquo; </span>
+                  Quero agradecer ao senhor, Dr. Vinícius e a toda equipe que me
+                  atendeu, desejando que Deus conserve em vossos corações para
+                  com vossos pacientes toda a dedicação, cuidado e carinho que
+                  me foram dispensados, e que vos abençoe nas vossas vidas e na
+                  carreira que escolheram.
+                </p>
+                <cite> A.L.L.A., SÃO PAULO-SP, 22/12/13 </cite>
+              </blockquote>
+            </div>
+
+            <div class="testimonial swiper-slide">
+              <blockquote>
+                <p>
+                  <span>&ldquo; </span>
+                  Gostaria de agradecer a todos da equipe da Angiomaster pelo
+                  tratamento de meu pai. Sempre com amor, carinho e competência,
+                  vocês tornaram nossos piores dias em momentos mais serenos.
+                </p>
+                <cite> A.B. 12/07/2016 </cite>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <div class="container-footer space">
+        <div class="endereco">
+          <h4>Endereço:</h4>
+          <p>
+            Av. Luiz Tarquínio, 2589, Condominio Vilas Trade Center, Edif. Vilas
+            Master Empresarial, Sala 511/512 - Vilas do Atlântico, Lauro de
+            Freitas - Ba - CEP - 42708-901
+          </p>
+          <h4>Telefones para contato:</h4>
+          <p>3051-1610</p>
+          <p>98306-6854</p>
+        </div>
+        <div class="socialMediaFooter">
+          <div>
+            <a
+              href="https://www.instagram.com/angio.master"
+              target="_blank"
+              title="Acesso nosso instagram !"
+            >
+              <i
+                class="fa-brands fa-instagram"
+                style="color: var(--color-primary)"
+              ></i>
+            </a>
+          </div>
+
+          <div>
+            <a
+              href="https://www.facebook.com/angiomaster"
+              target="_blank"
+              title="Acesse o nosso facebook !"
+            >
+              <i
+                class="fa-brands fa-facebook-f"
+                style="color: var(--color-primary)"
+              ></i>
+            </a>
+          </div>
+
+          <div>
+            <a
+              href="mailto:contato@angiomaster.com.br"
+              target="_blank"
+              title="Nos mande um email !"
+            >
+              <i
+                class="fa-regular fa-envelope"
+                style="color: var(--color-primary)"
+              ></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  </body>
+</html>

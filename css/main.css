@@ -1,0 +1,24 @@
+:root {
+  font-size: 62.5%;
+
+  --color-primary: #07add3;
+  --color-dark-primary: #178daa;
+  --font-gray: #3f4c5f;
+  --font-dark-gray: #404d5f;
+  --font-lato: 'Lato', sans-serif;
+  --font-raleway: 'Raleway', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
