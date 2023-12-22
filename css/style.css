@@ -1141,6 +1141,11 @@ input[type='radio'] {
   }
 }
 @media screen and (max-width: 600px) {
+  .about-container {
+    flex-direction: column; /* Altera a direção do flex para coluna */
+    width: 100%;
+  }
+
   .main-card .cards .card {
     /* margin: 20px 0 10px 0; */
     width: 100%;
