@@ -229,7 +229,7 @@ body {
   display: flex;
   justify-content: center;
   width: 36rem;
-  height: auto;
+  height: 25rem;
   position: relative;
 
   border: 2px solid #30a6c2;
