@@ -121,10 +121,6 @@ ul li {
 }
 
 .carousel {
-  visibility: hidden;
-}
-
-.carousel {
   margin-top: 5rem;
   margin-bottom: 10rem;
   overflow: hidden;
@@ -173,9 +169,6 @@ ul li {
 
 body {
   background: #eff8fa;
-}
-.about {
-  visibility: hidden;
 }
 
 .about-container {
@@ -236,7 +229,7 @@ body {
   display: flex;
   justify-content: center;
   width: 36rem;
-  height: 25rem;
+  height: auto;
   position: relative;
 
   border: 2px solid #30a6c2;
@@ -1128,9 +1121,37 @@ input[type='radio'] {
     font-family: var(--font-raleway);
   }
 
+  #testimonials header {
+    margin-top: 2rem;
+  }
+
+  #testimonials blockquote {
+    max-width: 90vw;
+    height: 32rem;
+    padding: 2rem;
+    box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.15);
+    border-radius: 1rem;
+    border: 2px solid #30a6c2;
+    background: white;
+  }
+
+  .container-footer {
+    max-width: 100vw;
+  }
+
   #footer .container-footer .endereco {
+    font-size: 15px;
     margin-left: 3rem;
     margin-top: -7rem;
+  }
+
+  #footer .container-footer .socialMediaFooter {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-right: 20px;
+    gap: 5rem;
+    font-size: 2rem;
   }
 }
 
@@ -1140,10 +1161,173 @@ input[type='radio'] {
     width: calc(100% / 2 - 1rem);
   }
 }
-@media screen and (max-width: 600px) {
-  .about-container {
-    flex-direction: column; /* Altera a direção do flex para coluna */
+@media (max-width: 600px) {
+  .main-card .cards .card {
+    /* margin: 20px 0 10px 0; */
     width: 100%;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 430px) {
+  .about-container {
+    max-width: 100vw;
+  }
+
+  .about-container .text {
+    padding: 1rem;
+  }
+
+  .cardGrid {
+    max-width: 90vw; /* Ocupa 100% da largura, com 20px de margem entre os cards */
+    box-sizing: border-box;
+    margin: 0 5vw 40px 5vw; /* Espaço entre os cards */
+
+    flex-direction: column;
+
+    border: 2px solid #30a6c2;
+    border-radius: 20px;
+    box-shadow: 0px 35px 80px rgba(0, 0, 0, 0.15);
+    transition: 0.5s;
+  }
+
+  .cardGrid .imgBox {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 7rem;
+    left: 40%; /* Centraliza horizontalmente */
+    /* Ajusta a posição horizontalmente */
+    transition: 0.5s;
+  }
+
+  .cardGrid:hover .imgBox {
+    top: -4rem;
+    transition: 0.5s;
+  }
+
+  .cardGrid .imgBox img {
+    width: 6rem;
+    height: 5.8rem;
+    object-fit: cover;
+    filter: brightness(0) invert(0);
+  }
+
+  .cardGrid .title {
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: absolute;
+    top: 16rem;
+    width: 100%;
+    padding: 0rem 3rem;
+    text-align: center;
+    height: 5rem;
+    overflow: hidden;
+
+    color: black;
+
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+
+    transition: 0.5s;
+  }
+
+  .cardGrid .title p {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    font-weight: 400;
+    font-size: 1.6rem;
+    font-family: 'Lato', sans-serif;
+  }
+
+  .cardGrid:hover .title {
+    top: 5rem;
+    height: 25rem;
+  }
+
+  .main-card .cards .card {
+    /* margin: 20px 0 10px 0; */
+    width: 100%;
+  }
+}
+
+@media (max-width: 320px) {
+  .about-container {
+    max-width: 100vw;
+  }
+
+  .about-container .text {
+    padding: 1rem;
+  }
+
+  .cardGrid {
+    max-width: 90vw; /* Ocupa 100% da largura, com 20px de margem entre os cards */
+    box-sizing: border-box;
+    margin: 0 5vw 40px 5vw; /* Espaço entre os cards */
+
+    flex-direction: column;
+
+    border: 2px solid #30a6c2;
+    border-radius: 20px;
+    box-shadow: 0px 35px 80px rgba(0, 0, 0, 0.15);
+    transition: 0.5s;
+  }
+
+  .cardGrid .imgBox {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 7rem;
+    left: 40%; /* Centraliza horizontalmente */
+    /* Ajusta a posição horizontalmente */
+    transition: 0.5s;
+  }
+
+  .cardGrid:hover .imgBox {
+    top: -4rem;
+    transition: 0.5s;
+  }
+
+  .cardGrid .imgBox img {
+    width: 6rem;
+    height: 5.8rem;
+    object-fit: cover;
+    filter: brightness(0) invert(0);
+  }
+
+  .cardGrid .title {
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: absolute;
+    top: 16rem;
+    width: 100%;
+    padding: 0rem 3rem;
+    text-align: center;
+    height: 5rem;
+    overflow: hidden;
+
+    color: black;
+
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+
+    transition: 0.5s;
+  }
+
+  .cardGrid .title p {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    font-weight: 400;
+    font-size: 1.6rem;
+    font-family: 'Lato', sans-serif;
+  }
+
+  .cardGrid:hover .title {
+    top: 5rem;
+    height: 25rem;
   }
 
   .main-card .cards .card {
