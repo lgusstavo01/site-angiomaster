@@ -1144,9 +1144,14 @@ input[type='radio'] {
     width: calc(100% / 2 - 1rem);
   }
 }
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .main-card .cards .card {
     /* margin: 20px 0 10px 0; */
     width: 100%;
+  }
+
+  .about-container {
+    width: 100%;
+    padding: 0.5rem;
   }
 }
