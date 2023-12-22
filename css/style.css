@@ -245,10 +245,6 @@ body {
   transition: 0.5s;
 }
 
-.checkup-vascular {
-  visibility: hidden;
-}
-
 .cardGrid:hover {
   height: 30rem;
 }
