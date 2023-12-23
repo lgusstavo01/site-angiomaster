@@ -1,13 +1,24 @@
+.informacoes {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10rem;
+}
+
 .cardGrid {
   display: flex;
   justify-content: center;
   width: 36rem;
   height: 25rem;
   position: relative;
+
   border: 2px solid #30a6c2;
   border-radius: 20px;
   box-shadow: 0px 35px 80px rgba(0, 0, 0, 0.15);
   transition: 0.5s;
+}
+
+.cardGrid:hover {
+  height: 30rem;
 }
 
 .cardGrid .imgBox {
@@ -15,7 +26,12 @@
   width: 25rem;
   height: auto;
   top: 7rem;
-  left: 42%;
+  left: 42%; /* Adiciona esta linha para centralizar horizontalmente */
+  transition: 0.5s;
+}
+
+.cardGrid:hover .imgBox {
+  top: -4rem;
   transition: 0.5s;
 }
 
@@ -23,6 +39,7 @@
   width: 6rem;
   height: 5.8rem;
   object-fit: cover;
+
   filter: brightness(0) invert(0);
 }
 
@@ -38,10 +55,13 @@
   text-align: center;
   height: 5rem;
   overflow: hidden;
+
   font-size: 2rem;
   color: black;
+
   font-family: 'Lato', sans-serif;
   font-weight: bold;
+
   transition: 0.5s;
 }
 
@@ -51,6 +71,11 @@
   font-weight: 400;
   font-size: 1.6rem;
   font-family: 'Lato', sans-serif;
+}
+
+.cardGrid:hover .title {
+  top: 5rem;
+  height: 25rem;
 }
 
 .read-more {
@@ -82,4 +107,3 @@
   color: var(--font-gray);
   font-family: var(--font-raleway);
 }
-
