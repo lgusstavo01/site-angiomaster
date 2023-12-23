@@ -1,0 +1,44 @@
+.carousel {
+  margin-top: 5rem;
+  margin-bottom: 10rem;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.carouselContainer {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carouselImg {
+  flex: 0 0 100%;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.carouselImg img {
+  width: 100%; /* Faz com que a imagem ocupe 100% da largura do seu contêiner */
+  height: auto; /* Mantém a proporção original da imagem */
+  display: block;
+}
+
+.carousel-btn {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  color: white;
+  background-color: black;
+  border: none;
+  padding: 10px;
+}
+
+.prev-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 10px;
+}

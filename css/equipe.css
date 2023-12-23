@@ -1,0 +1,142 @@
+.equipe {
+  display: flex;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-family: var(--font-raleway);
+}
+
+.equipe::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  background: #30a6c2;
+  clip-path: inset(47% 0 0 0);
+  z-index: -1;
+  height: 100%;
+}
+
+::selection {
+  background: #4070f4;
+  color: #fff;
+}
+.container-equipe {
+  max-width: 114rem;
+  width: 100%;
+  overflow: hidden;
+  padding: 80px 0;
+}
+.container-equipe .main-card {
+  display: flex;
+  justify-content: space-evenly;
+  width: 200%;
+  transition: 1s;
+}
+#two:checked ~ .main-card {
+  margin-left: -100%;
+}
+.container-equipe .main-card .cards {
+  width: calc(100% / 2 - 1rem);
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 2rem;
+  justify-content: space-between;
+}
+.main-card .cards .card {
+  width: 20rem;
+  background: #fff;
+  border-radius: 1.2rem;
+  padding: 3rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
+  transition: all 0.4s ease;
+}
+.main-card .cards .card:hover {
+  transform: translateY(-1.5rem);
+}
+.cards .card .content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.cards .card .content .img {
+  height: 13rem;
+  width: 13rem;
+  border-radius: 50%;
+  padding: 0.3rem;
+  background: #4070f4;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+.card .content .img img {
+  height: 100%;
+  width: 100%;
+  border: 0.3rem solid #ffff;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.card .content .name {
+  font-size: 2rem;
+  font-weight: 500;
+}
+.card .content .job {
+  font-size: 2rem;
+  color: #4070f4;
+}
+.card .content .media-icons {
+  margin-top: 1rem;
+  display: flex;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.juntando {
+  height: 30.9rem;
+}
+
+.media-icons a {
+  text-align: center;
+  line-height: 3.3rem;
+  height: 3.5rem;
+  width: 3.5rem;
+  margin: 0 0.4rem;
+  font-size: 1.4rem;
+  color: #fff;
+  border-radius: 50%;
+  border: 0.2rem solid transparent;
+  background: #30a6c2;
+  transition: all 0.3s ease;
+}
+.media-icons a:hover {
+  color: #30a6c2;
+  background-color: #fff;
+  border-color: #30a6c2;
+}
+.container-equipe .button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+}
+
+#one:checked ~ .button .one {
+  width: 3.5rem;
+}
+#one:checked ~ .button .two {
+  width: 1.5rem;
+}
+#two:checked ~ .button .one {
+  width: 1.5rem;
+}
+#two:checked ~ .button .two {
+  width: 3.5rem;
+}
+input[type='radio'] {
+  display: none;
+}

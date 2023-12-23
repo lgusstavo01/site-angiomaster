@@ -1,0 +1,99 @@
+#header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+
+  text-align: center;
+  font-size: 1.1rem;
+
+  border-bottom: 1px solid #ccc;
+  background-color: var(--color-primary);
+  font-family: var(--font-raleway);
+}
+
+nav {
+  height: var(--header-height);
+  padding: 5px;
+}
+
+nav img {
+  padding-top: 10px;
+  width: 50%;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.grid {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  gap: 30px;
+  justify-content: center;
+}
+
+.grid li {
+  margin-right: 1rem;
+}
+
+.grid a {
+  color: white;
+  align-self: center;
+}
+
+.grid a::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 0;
+  transition: width 0.4s;
+  background-color: white;
+}
+
+.grid a:hover::after {
+  width: 100%;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+ul a {
+  text-decoration: none;
+  color: var(--color-dark-gray);
+}
+
+ul a:hover {
+  color: white;
+}
+
+ul li {
+  list-style-type: none;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+.toggle {
+  display: none;
+  border: none;
+  background: none;
+  border-top: 3px solid white;
+  cursor: pointer;
+}
+
+.toggle::after,
+.toggle::before {
+  content: '';
+  display: block;
+  width: 2rem;
+  height: 3px;
+  margin-top: 5px;
+  background: #fff;
+  position: relative;
+  transition: 0.3s;
+}

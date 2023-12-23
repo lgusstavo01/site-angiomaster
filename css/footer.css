@@ -1,0 +1,35 @@
+#footer {
+  margin-top: 10rem;
+  background: #006f8f;
+  height: 40rem;
+}
+
+#footer .endereco {
+  color: white;
+  font-family: var(--font-raleway);
+  width: 50%;
+  padding-top: 11rem;
+  font-size: 2rem;
+}
+
+#footer .endereco h4 {
+  color: #ccc;
+}
+
+#footer .endereco p {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+#footer .socialMediaFooter {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20rem;
+  gap: 5rem;
+  font-size: 4rem;
+}
+
+.container-footer {
+  display: flex;
+  justify-content: space-between;
+}

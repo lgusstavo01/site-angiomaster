@@ -9,6 +9,8 @@
   --font-raleway: 'Raleway', sans-serif;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
 a {
   text-decoration: none;
 }
@@ -21,4 +23,24 @@ a {
 
 body {
   overflow-x: hidden;
+}
+
+.space {
+  max-width: 114rem;
+  margin: 0 auto;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  max-width: 114rem;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.informacoes {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10rem;
 }

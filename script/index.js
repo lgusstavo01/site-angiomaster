@@ -57,26 +57,26 @@ const swiper = new Swiper('.swiper-container', {
   }
 })
 
-document.addEventListener('DOMContentLoaded', function () {
-  function showCardInfo() {
-    var cards = document.querySelectorAll('.cardGrid')
-    var screenWidth = window.innerWidth
+// document.addEventListener('DOMContentLoaded', function () {
+//   function showCardInfo() {
+//     var cards = document.querySelectorAll('.cardGrid')
+//     var screenWidth = window.innerWidth
 
-    cards.forEach(function (card) {
-      var title = card.querySelector('.title')
+//     cards.forEach(function (card) {
+//       var title = card.querySelector('.title')
 
-      if (screenWidth < 980) {
-        card.classList.add('small-screen-visible')
-      } else {
-        card.classList.remove('small-screen-visible')
-      }
-    })
-  }
+//       if (screenWidth < 980) {
+//         card.classList.add('small-screen-visible')
+//       } else {
+//         card.classList.remove('small-screen-visible')
+//       }
+//     })
+//   }
 
-  window.addEventListener('resize', showCardInfo)
+//   window.addEventListener('resize', showCardInfo)
 
-  showCardInfo()
-})
+//   showCardInfo()
+// })
 
 window.sr = ScrollReveal({ reset: true })
 
@@ -85,7 +85,6 @@ sr.reveal('.carousel', {
   distance: '20rem', // Define a distância de deslocamento
   duration: 900,
   easing: 'ease-out', // Pode ajustar a curva de animação conforme necessário
-  mobile: false // Desativa a animação em dispositivos móveis (se desejar)
 })
 
 // ABOUT
@@ -94,7 +93,6 @@ sr.reveal('.about', {
   distance: '20rem', // Define a distância de deslocamento
   duration: 900,
   easing: 'ease-out', // Pode ajustar a curva de animação conforme necessário
-  mobile: false // Desativa a animação em dispositivos móveis (se desejar)
 })
 
 // FINAL DO ABOUT
@@ -107,7 +105,6 @@ sr.reveal('.checkup-vascular', {
   distance: '20rem', // Define a distância de deslocamento
   duration: 900,
   easing: 'ease-out', // Pode ajustar a curva de animação conforme necessário
-  mobile: false // Desativa a animação em dispositivos móveis (se desejar)
 })
 
 sr.reveal('.tratamento-diabetico', {
@@ -115,7 +112,6 @@ sr.reveal('.tratamento-diabetico', {
   distance: '20rem', // Define a distância de deslocamento
   duration: 900,
   easing: 'ease-out', // Pode ajustar a curva de animação conforme necessário
-  mobile: false // Desativa a animação em dispositivos móveis (se desejar)
 })
 
 //ELEMENTOS QUE VEM DA DIREITA
@@ -125,7 +121,6 @@ sr.reveal('.tratamento-ulceras', {
   distance: '20rem', // Define a distância de deslocamento
   duration: 900,
   easing: 'ease-out', // Pode ajustar a curva de animação conforme necessário
-  mobile: false // Desativa a animação em dispositivos móveis (se desejar)
 })
 
 sr.reveal('.doencas-arteriais', {
@@ -133,7 +128,6 @@ sr.reveal('.doencas-arteriais', {
   distance: '20rem', // Define a distância de deslocamento
   duration: 900,
   easing: 'ease-out', // Pode ajustar a curva de animação conforme necessário
-  mobile: false // Desativa a animação em dispositivos móveis (se desejar)
 })
 
 //ELEMENTOS QUE VEM DE CIMA E BAIXO
@@ -143,7 +137,6 @@ sr.reveal('.tratamento-venosas', {
   distance: '20rem', // Define a distância de deslocamento
   duration: 900,
   easing: 'ease-out', // Pode ajustar a curva de animação conforme necessário
-  mobile: false // Desativa a animação em dispositivos móveis (se desejar)
 })
 
 sr.reveal('.ecografia-vascular', {
@@ -151,7 +144,6 @@ sr.reveal('.ecografia-vascular', {
   distance: '20rem', // Define a distância de deslocamento
   duration: 900,
   easing: 'ease-out', // Pode ajustar a curva de animação conforme necessário
-  mobile: false // Desativa a animação em dispositivos móveis (se desejar)
 })
 
 // TERMINANDO ANIMACAO DOS SERVICOS
@@ -162,7 +154,6 @@ sr.reveal('.doctor-andre', {
   distance: '20rem', // Define a distância de deslocamento
   duration: 900,
   easing: 'ease-out', // Pode ajustar a curva de animação conforme necessário
-  mobile: false // Desativa a animação em dispositivos móveis (se desejar)
 })
 
 sr.reveal('.doctor-italo', {
@@ -170,7 +161,6 @@ sr.reveal('.doctor-italo', {
   distance: '20rem', // Define a distância de deslocamento
   duration: 900,
   easing: 'ease-out', // Pode ajustar a curva de animação conforme necessário
-  mobile: false // Desativa a animação em dispositivos móveis (se desejar)
 })
 
 sr.reveal('.doctor-luciana', {
@@ -178,7 +168,6 @@ sr.reveal('.doctor-luciana', {
   distance: '20rem', // Define a distância de deslocamento
   duration: 900,
   easing: 'ease-out', // Pode ajustar a curva de animação conforme necessário
-  mobile: false // Desativa a animação em dispositivos móveis (se desejar)
 })
 
 sr.reveal('.doctor-vinicius', {
@@ -186,7 +175,6 @@ sr.reveal('.doctor-vinicius', {
   distance: '20rem', // Define a distância de deslocamento
   duration: 900,
   easing: 'ease-out', // Pode ajustar a curva de animação conforme necessário
-  mobile: false // Desativa a animação em dispositivos móveis (se desejar)
 })
 
 sr.reveal('.doctor-ricardo', {
@@ -194,7 +182,6 @@ sr.reveal('.doctor-ricardo', {
   distance: '20rem', // Define a distância de deslocamento
   duration: 900,
   easing: 'ease-out', // Pode ajustar a curva de animação conforme necessário
-  mobile: false // Desativa a animação em dispositivos móveis (se desejar)
 })
 
 //TERMINANDO ANIMAÇÃO DOS CARDS DA EQUIPE
@@ -204,7 +191,6 @@ sr.reveal('#testimonials', {
   distance: '20rem', // Define a distância de deslocamento
   duration: 900,
   easing: 'ease-out', // Pode ajustar a curva de animação conforme necessário
-  mobile: false // Desativa a animação em dispositivos móveis (se desejar)
 })
 
 sr.reveal('#footer', {
@@ -212,5 +198,4 @@ sr.reveal('#footer', {
   distance: '20rem', // Define a distância de deslocamento
   duration: 900,
   easing: 'ease-out', // Pode ajustar a curva de animação conforme necessário
-  mobile: false // Desativa a animação em dispositivos móveis (se desejar)
 })
